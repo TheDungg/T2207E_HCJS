@@ -1,0 +1,12 @@
+h1{
+    color: initial;
+    font-size: 27px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 700;
+}
