@@ -1,7 +1,7 @@
 h1{
     color: white;
     font-family: sans-serif;
-    text-align: center;
+    text-align: justify;
 }
 
 h2{
@@ -9,5 +9,5 @@ h2{
 }
 
 div{
-    background-color: limegreen;
+    background-color: mediumseagreen;
 }
