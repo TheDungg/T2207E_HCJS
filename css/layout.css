@@ -41,3 +41,12 @@ img{
     float: left;
     width: 75%;
 }
+
+.footer li i{
+    font-size: 50px;
+    color: #ffa500;
+}
+
+.footer li i:hover{
+    color: #ff253a;
+}
