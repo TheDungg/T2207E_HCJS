@@ -59,9 +59,9 @@ console.log("ABCXYZ...");
 var m=0;
 var n=0;
 function sochan(){
-    var xyz = document.getElementById("head");
-    xyz.innerText = m;
     if(m % 2 == 0){
+        var xyz = document.getElementById("head");
+        xyz.innerText += " "+m;
         console.log(m);
         n++;
     }
