@@ -56,8 +56,9 @@ console.log("ABCXYZ...");
 }*/
 //var si = setInterval(countdown,1000);
 
-var m=0;
-var n=0;
+//var m=0;
+//var n=0;
+/*
 function sochan(){
     if(m % 2 == 0){
         var xyz = document.getElementById("head");
@@ -71,3 +72,40 @@ function sochan(){
     }
 }
 var kq = setInterval(sochan,100);
+*/
+
+var n=2;
+var m=0;
+
+function checkPrimme(x){
+    if(x<2){
+        return false;
+    }else if(x==2 || x==3){
+        return true;
+    }else{
+        for (var i=2; i<=x/2; i++){
+            if(x%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+function nextPrime(x){
+    for (var i=x+1;true;i++){
+        if (checkPrimme(i)){
+            return i;
+        }
+    }
+}
+function countdown(){
+    var xyz = document.getElementById("head");
+    xyz.innerText += " " +n;
+    n = nextPrime(n);
+    m++;
+    if (m>=10){
+        clearInterval(si);
+    }
+}
+var si = setInterval(countdown,100);
