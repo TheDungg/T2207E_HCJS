@@ -1,4 +1,6 @@
 function update1 (){
+    var bg = document.getElementById("bg-fade");
+    bg.style.display = "block";
     var xhttp = new XMLHttpRequest();
     xhttp.onload = function (){
         // console.log(this.responseText)
@@ -16,6 +18,7 @@ function update1 (){
 
         var p = data.main.pressure;
         document.getElementById("press").innerText = p;
+        bg.style.display = "none";
 
 
 
