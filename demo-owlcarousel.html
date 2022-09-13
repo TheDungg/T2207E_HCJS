@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo owl.carousel.js</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="library/owlcarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="library/owlcarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="library/owlcarousel2-2.3.4/dist/assets/owl.theme.green.css">
+</head>
+<body>
+    <section class="section banner">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><h4><img src="images/toystory.jpg"></h4></div>
+                <div class="item"><h4><img src="images/up.jpg"></h4></div>
+                <div class="item"><h4><img src="images/toystory.jpg"></h4></div>
+                <div class="item"><h4><img src="images/e42192b0682ede9d80d92260fb5e17cd.jpg"></h4></div>
+                <div class="item"><h4><img src="images/toystory.jpg"></h4></div>
+                <div class="item"><h4><img src="images/dev7logo.png"></h4></div>
+                <div class="item"><h4><img src="images/toystory.jpg"></h4></div>
+                <div class="item"><h4><img src="images/pexels-pixabay-53594.jpg"></h4></div>
+                <div class="item"><h4><img src="images/toystory.jpg"></h4></div>
+                <div class="item"><h4><img src="images/walle.jpg"></h4></div>
+                <div class="item"><h4><img src="images/cop2.jpg"></h4></div>
+                <div class="item"><h4><img src="images/up.jpg"></h4></div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="library/jquery/jquery.3.6.1.js"></script>
+    <script type="text/javascript" src="library/owlcarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+</body>
+</html>
