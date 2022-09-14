@@ -50,3 +50,8 @@ img{
 .footer li i:hover{
     color: #ff253a;
 }
+.header{
+    text-align: center;
+    background-color: purple;
+    color: #ffffff;
+}
